@@ -19,19 +19,23 @@ namespace Ejercicio112
         //Random rnd5 = new Random();
         Double timer, tiempoLlegadaConsulta, tiempoProximaConsulta, tiempoLlegadaUrgencia, tiempoProximaUrgencia, tiempoAtencion, tiempoFinAtencion, tiempoRestante;
 
-        Double[] tiempoLlegadaCons = new Double[10000];
-        Double[] tiempoLlegadaUrg = new Double[10000];
-        Double[] tiempoEsperaCons = new Double[10000];
-        Double[] tiempoEsperaUrg = new Double[10000];
+        //Double[] tiempoLlegadaCons = new Double[100000];
+        //Double[] tiempoLlegadaUrg = new Double[100000];
+        //Double[] tiempoEsperaCons = new Double[100000];
+        //Double[] tiempoEsperaUrg = new Double[100000];
+        Dictionary<int, double> tiempoLlegadaCons = new Dictionary<int, double>();
+        Dictionary<int, double> tiempoLlegadaUrg = new Dictionary<int, double>();
+        Dictionary<int, double> tiempoEsperaCons = new Dictionary<int, double>(); //creo borrar
+        Dictionary<int, double> tiempoEsperaUrg = new Dictionary<int, double>(); //creo borrar
 
         Double tiempoEsperaMaxCons, tiempoEsperaMaxUrg, tiempoEsperaMostrar;
 
         String ev, estadoMedico, estadoActual;
         String pacienteMaxEsperaCons, pacienteMaxEsperaUrg;
         Double rndC,rndU,rndEND;
-        //Double tmp1, tmp2, tmp3, tmp4;
         Double xMin;
         bool banderaUrg;
+        Double esperaHastaAhora;
         Int32 cola, colaC, colaU, colaMaxC, colaMaxU, colaMax;
         Int32 numeroConsulta, numeroUrgencia, numeroPaciente, numeroFinConsulta, numeroFinUrgencia, numeroConsultaInterrumpida;
         Int32 numeroCorteCons;
@@ -51,6 +55,7 @@ namespace Ejercicio112
             tiempoFinAtencion = 999999;
             timer = 0;
             banderaUrg = false;
+            esperaHastaAhora = 0;
             numeroConsulta = 0;
             numeroUrgencia = 0;
             numeroPaciente = 0;
@@ -105,7 +110,7 @@ namespace Ejercicio112
                         //ev = "Llegada Consulta";
 
                         // !! Podría sacar el GeneradorNros.Truncar((timer / 60)) ya que no me pide explicitamente mostrar las horas
-                        dataGridView1.Rows.Add(ev + " nº: "+ numeroConsulta.ToString(), timer, rndC, tiempoLlegadaConsulta, tiempoProximaConsulta, "", "", tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, colaC, colaU, "","", GeneradorNros.Truncar((timer / 60)));
+                        dataGridView1.Rows.Add(ev + " nº: "+ numeroConsulta.ToString(), GeneradorNros.Truncar((timer / 60)), timer, rndC, tiempoLlegadaConsulta, tiempoProximaConsulta, "", "", tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, banderaUrg, tiempoFinAtencion, colaC, colaU, "", colaMaxC, colaMaxU, colaMax, tiempoEsperaCons, tiempoEsperaUrg, tiempoEsperaMaxCons,tiempoEsperaMaxUrg,contAtencUrg,contAtencTot);
                     }
 
                     // llega consulta y medico ocupado
@@ -127,7 +132,7 @@ namespace Ejercicio112
                             filaColaMax = dataGridView1.Rows.Count - 1;
                         }
                         //ev = "Llegada Consulta";
-                        dataGridView1.Rows.Add(ev + " nº: " + numeroConsulta.ToString(), timer, rndC, tiempoLlegadaConsulta, tiempoProximaConsulta, "", "", tiempoProximaUrgencia, estadoMedico, "", "", "", colaC, colaU, "","", GeneradorNros.Truncar((timer / 60)));
+                        dataGridView1.Rows.Add(ev + " nº: " + numeroConsulta.ToString(), GeneradorNros.Truncar((timer / 60)), timer, rndC, tiempoLlegadaConsulta, tiempoProximaConsulta, "", "", tiempoProximaUrgencia, estadoMedico, "", "", tiempoFinAtencion,banderaUrg, colaC, colaU, "",colaMaxC, colaMaxU ,colaMax, tiempoEsperaCons, tiempoEsperaUrg, tiempoEsperaMaxCons, tiempoEsperaMaxUrg, contAtencUrg, contAtencTot);
                     }
                     
                     
@@ -143,6 +148,7 @@ namespace Ejercicio112
                     rndU = RndLlegaUrgencia.NextDouble();
                     tiempoLlegadaUrgencia = GeneradorNros.Exponencial(Convert.ToDouble(txtMediaUrgLl.Text), rndU);
                     tiempoProximaUrgencia = GeneradorNros.Truncar(timer + tiempoLlegadaUrgencia);
+                    ev = "Llegada Urgencia";
 
                     //llega urgencia y medico libre
                     if (estadoMedico == "L")
@@ -151,42 +157,44 @@ namespace Ejercicio112
                         rndEND = RndFinAtencion.NextDouble();
                         tiempoAtencion = GeneradorNros.Uniforme(Convert.ToDouble(txtUnifUrgA.Text), Convert.ToDouble(txtUnifUrgB.Text), rndEND);
                         tiempoFinAtencion = GeneradorNros.Truncar(timer + tiempoAtencion);
-                        ev = "Llegada Urgencia";
-                        dataGridView1.Rows.Add(ev + " nº: " + numeroUrgencia.ToString(), timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, colaC, colaU, "","", GeneradorNros.Truncar((timer / 60)));
+                        dataGridView1.Rows.Add(ev + " nº: " + numeroUrgencia.ToString(), GeneradorNros.Truncar((timer / 60)), timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, banderaUrg, colaC, colaU, "", colaMaxC, colaMaxU, colaMax, tiempoEsperaCons, tiempoEsperaUrg, tiempoEsperaMaxCons, tiempoEsperaMaxUrg, contAtencUrg, contAtencTot);
                     }
+                    
+
                     else
                     {
                         //Si llega urgencia y esta atendiendo consulta
                         if (estadoMedico == "AC")
                         {
                             estadoMedico = "AU";
-                            numeroConsultaInterrumpida = numeroFinConsulta + 1;
-                            colaC++;
+                            numeroConsultaInterrumpida = numeroFinConsulta + 1; 
+                            colaC++; //simbolico no real
                             cola++;
 
-                            //actualiza cola maxima consulta y cola maxima total
-                            if (colaC > colaMaxC)
-                            {
-                                colaMaxC = colaC;
-                                filaColaConsMax = dataGridView1.Rows.Count - 1;
-                            }
-                            if (cola > colaMax)
-                            {
-                                colaMax = cola;
-                                filaColaMax = dataGridView1.Rows.Count - 1;
-                            }
+                            ////actualiza cola maxima consulta y cola maxima total
+                            //if (colaC > colaMaxC)
+                            //{
+                            //    colaMaxC = colaC;
+                            //    filaColaConsMax = dataGridView1.Rows.Count - 1;
+                            //}
+                            //if (cola > colaMax)
+                            //{
+                            //    colaMax = cola;
+                            //    filaColaMax = dataGridView1.Rows.Count - 1;
+                            //}
 
                             tiempoRestante = GeneradorNros.Truncar(tiempoFinAtencion - timer);
                             rndEND = RndFinAtencion.NextDouble();
                             tiempoAtencion = GeneradorNros.Uniforme(Convert.ToDouble(txtUnifUrgA.Text), Convert.ToDouble(txtUnifUrgB.Text), rndEND);
                             tiempoFinAtencion = GeneradorNros.Truncar(timer + tiempoAtencion);
-                            
+                            tiempoLlegadaCons[numeroConsultaInterrumpida] = timer;
                             banderaUrg = true;
 
-                            numeroCorteCons = numeroFinConsulta + 1;
-                            ev = "Llegada Urgencia nº: " + numeroUrgencia.ToString() + " - (Corta Cons. nº: " + numeroCorteCons.ToString() + ")";
-                            dataGridView1.Rows.Add(ev, timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, colaC, colaU, tiempoRestante,"",GeneradorNros.Truncar(timer / 60));    
+                            //numeroCorteCons = numeroFinConsulta + 1; // !!! ya No se usa pero controlar
+                            ev = "Llegada Urgencia nº: " + numeroUrgencia.ToString() + " - (Corta Cons. nº: " + numeroConsultaInterrumpida.ToString() + ")";
+                            dataGridView1.Rows.Add(ev, GeneradorNros.Truncar((timer / 60)), timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, banderaUrg, colaC, colaU, tiempoRestante,"", colaMaxC, colaMaxU, colaMax, tiempoEsperaCons, tiempoEsperaUrg, tiempoEsperaMaxCons, tiempoEsperaMaxUrg, contAtencUrg, contAtencTot);    
                         }
+                        
                         //llega urgencia y está atendiendo otra urgencia
                         else
                         {
@@ -206,10 +214,10 @@ namespace Ejercicio112
                                 filaColaMax = dataGridView1.Rows.Count - 1;
                             }
                             ev = "Llegada Urgencia";
-                            dataGridView1.Rows.Add(ev + " nº: " + numeroUrgencia.ToString(), timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, "", "", tiempoFinAtencion, colaC, colaU, "","",GeneradorNros.Truncar((timer / 60)));    
+                            dataGridView1.Rows.Add(ev + " nº: " + numeroUrgencia.ToString(), GeneradorNros.Truncar((timer / 60)), timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, banderaUrg, colaC, colaU, tiempoRestante, colaMaxC, colaMaxU, colaMax, tiempoEsperaCons, tiempoEsperaUrg, tiempoEsperaMaxCons, tiempoEsperaMaxUrg, contAtencUrg, contAtencTot);
                         }
-                        
-                        
+
+
                     }  
                     
                     
@@ -220,20 +228,23 @@ namespace Ejercicio112
                 {
                     timer = GeneradorNros.Truncar(tiempoFinAtencion);
                     estadoActual = estadoMedico;
-                    
+                    //double tiempoEspActual = 0;
+
                     //pregunto por el estado del medico para saber si es fin consulta o fin urgencia
-                    if (estadoActual == "AC")
+                    if (estadoActual == "AC") //si atendia una consulta no podía haber urgencias en cola
                     {
-                        numeroFinConsulta++;
-                        tiempoEsperaCons[numeroFinConsulta] = timer - tiempoLlegadaCons[numeroFinConsulta];
+                        //numeroFinConsulta++;
+                        esperaHastaAhora += timer - tiempoLlegadaCons[numeroFinConsulta];
+                        //tiempoEspActual = timer - tiempoLlegadaCons[numeroFinConsulta];
+
 
                         if (tiempoEsperaCons[numeroFinConsulta] > tiempoEsperaMaxCons)
                         {
                             tiempoEsperaMaxCons = tiempoEsperaCons[numeroFinConsulta];
                             pacienteMaxEsperaCons = "Paciente nº: " + numeroFinConsulta.ToString() + " consulta";
-                            filaTiempoEsperaConsMax = dataGridView1.Rows.Count - 1;
+                            filaTiempoEsperaConsMax = dataGridView1.Rows.Count - 1; // para pintar valor
                         }
-                           
+                        numeroFinConsulta++;
                     }
                     else
                     {
@@ -301,12 +312,13 @@ namespace Ejercicio112
                     {
                         banderaUrg = false;
                         tiempoFinAtencion = GeneradorNros.Truncar(timer + tiempoRestante);
-                        tiempoEsperaMostrar = GeneradorNros.Truncar(tiempoEsperaUrg[numeroFinUrgencia]);
+                        //tiempoEsperaMostrar = GeneradorNros.Truncar(tiempoEsperaUrg[numeroFinUrgencia]);
+                        tiempoEsperaMostrar = GeneradorNros.Truncar(timer - tiempoLlegadaCons[numeroConsultaInterrumpida]+esperaHastaAhora);
+
                         ev = "Fin Urgencia nº: " + numeroFinUrgencia.ToString() + " y Retoma Consulta nº: " + numeroConsultaInterrumpida.ToString();
                         estadoMedico = "AC";
                         colaC--;
                         cola--;
-
                         dataGridView1.Rows.Add(ev, timer, "", "", tiempoProximaConsulta, "", "", tiempoProximaUrgencia, estadoMedico, "", tiempoRestante, tiempoFinAtencion, colaC, colaU, "", tiempoEsperaMostrar, GeneradorNros.Truncar((timer / 60)));
                         tiempoRestante = 0;
                         continue;
@@ -365,6 +377,7 @@ namespace Ejercicio112
 
             dataGridView1.Rows[filaColaMax].Cells[12].Style.ForeColor = Color.Red;
             dataGridView1.Rows[filaColaMax].Cells[13].Style.ForeColor = Color.Red;
+
 
             MessageBox.Show("Fin de la simulación");
   
@@ -488,8 +501,8 @@ namespace Ejercicio112
 
                             banderaUrg = true;
 
-                            numeroCorteCons = numeroFinConsulta + 1;
-                            ev = "Llegada Urgencia nº: " + numeroUrgencia.ToString() + " - (Corta Cons. nº: " + numeroCorteCons.ToString() + ")";
+                            //numeroCorteCons = numeroFinConsulta + 1; ya no la uso pero controlar
+                            ev = "Llegada Urgencia nº: " + numeroUrgencia.ToString() + " - (Corta Cons. nº: " + numeroConsultaInterrumpida.ToString() + ")";
                             dataGridView1.Rows.Add(ev, timer, "", "", tiempoProximaConsulta, rndU, tiempoLlegadaUrgencia, tiempoProximaUrgencia, estadoMedico, rndEND, tiempoAtencion, tiempoFinAtencion, colaC, colaU, tiempoRestante,"",GeneradorNros.Truncar((timer / 60))); 
                         }
                         //llega urgencia y está atendiendo otra urgencia

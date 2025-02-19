@@ -28,41 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.evento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reloj = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rnd1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prox1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rnd2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpo2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prox2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.est = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rnd3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpo3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.finat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colac1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colau1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpo4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpoEspera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.relojhs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,6 +93,32 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.evento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.relojhs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reloj = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rnd1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tpo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prox1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rnd2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tpo2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prox2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.est = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rnd3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tpo3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.haySusp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colac1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colau1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tpo4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colaMaxCons = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colaMaxUrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colaMaxTot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tEspCons = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tEspPacUrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tEspMaxCons = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tMaxEspUrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contAtencUrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contAtencTot = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +128,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.evento,
+            this.relojhs,
             this.reloj,
             this.rnd1,
             this.tpo1,
@@ -131,150 +140,23 @@
             this.rnd3,
             this.tpo3,
             this.finat,
+            this.haySusp,
             this.colac1,
             this.colau1,
             this.tpo4,
-            this.tpoEspera,
-            this.relojhs});
+            this.colaMaxCons,
+            this.colaMaxUrg,
+            this.colaMaxTot,
+            this.tEspCons,
+            this.tEspPacUrg,
+            this.tEspMaxCons,
+            this.tMaxEspUrg,
+            this.contAtencUrg,
+            this.contAtencTot});
             this.dataGridView1.Location = new System.Drawing.Point(0, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1228, 446);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // evento
-            // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evento.DefaultCellStyle = dataGridViewCellStyle18;
-            this.evento.HeaderText = "Evento";
-            this.evento.Name = "evento";
-            this.evento.Width = 285;
-            // 
-            // reloj
-            // 
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reloj.DefaultCellStyle = dataGridViewCellStyle19;
-            this.reloj.HeaderText = "Reloj (en min.)";
-            this.reloj.Name = "reloj";
-            this.reloj.Width = 70;
-            // 
-            // rnd1
-            // 
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rnd1.DefaultCellStyle = dataGridViewCellStyle20;
-            this.rnd1.HeaderText = "Rnd";
-            this.rnd1.Name = "rnd1";
-            this.rnd1.Width = 50;
-            // 
-            // tpo1
-            // 
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpo1.DefaultCellStyle = dataGridViewCellStyle21;
-            this.tpo1.HeaderText = "Tpo. Entre Ll.";
-            this.tpo1.Name = "tpo1";
-            this.tpo1.Width = 50;
-            // 
-            // prox1
-            // 
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prox1.DefaultCellStyle = dataGridViewCellStyle22;
-            this.prox1.HeaderText = "Prox. Ll.";
-            this.prox1.Name = "prox1";
-            this.prox1.Width = 70;
-            // 
-            // rnd2
-            // 
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rnd2.DefaultCellStyle = dataGridViewCellStyle23;
-            this.rnd2.HeaderText = "Rnd";
-            this.rnd2.Name = "rnd2";
-            this.rnd2.Width = 40;
-            // 
-            // tpo2
-            // 
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpo2.DefaultCellStyle = dataGridViewCellStyle24;
-            this.tpo2.HeaderText = "Tpo. Entre Ll.";
-            this.tpo2.Name = "tpo2";
-            this.tpo2.Width = 50;
-            // 
-            // prox2
-            // 
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prox2.DefaultCellStyle = dataGridViewCellStyle25;
-            this.prox2.HeaderText = "Prox. Ll";
-            this.prox2.Name = "prox2";
-            this.prox2.Width = 70;
-            // 
-            // est
-            // 
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.est.DefaultCellStyle = dataGridViewCellStyle26;
-            this.est.HeaderText = "Est";
-            this.est.Name = "est";
-            this.est.Width = 30;
-            // 
-            // rnd3
-            // 
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rnd3.DefaultCellStyle = dataGridViewCellStyle27;
-            this.rnd3.HeaderText = "Rnd";
-            this.rnd3.Name = "rnd3";
-            this.rnd3.Width = 50;
-            // 
-            // tpo3
-            // 
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpo3.DefaultCellStyle = dataGridViewCellStyle28;
-            this.tpo3.HeaderText = "Tpo. At.";
-            this.tpo3.Name = "tpo3";
-            this.tpo3.Width = 50;
-            // 
-            // finat
-            // 
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finat.DefaultCellStyle = dataGridViewCellStyle29;
-            this.finat.HeaderText = "Fin At.";
-            this.finat.Name = "finat";
-            this.finat.Width = 70;
-            // 
-            // colac1
-            // 
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colac1.DefaultCellStyle = dataGridViewCellStyle30;
-            this.colac1.HeaderText = "Cola C";
-            this.colac1.Name = "colac1";
-            this.colac1.Width = 40;
-            // 
-            // colau1
-            // 
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colau1.DefaultCellStyle = dataGridViewCellStyle31;
-            this.colau1.HeaderText = "Cola U";
-            this.colau1.Name = "colau1";
-            this.colau1.Width = 40;
-            // 
-            // tpo4
-            // 
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpo4.DefaultCellStyle = dataGridViewCellStyle32;
-            this.tpo4.HeaderText = "Tpo Rest Cons";
-            this.tpo4.Name = "tpo4";
-            this.tpo4.Width = 50;
-            // 
-            // tpoEspera
-            // 
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpoEspera.DefaultCellStyle = dataGridViewCellStyle33;
-            this.tpoEspera.HeaderText = "Tpo Espera Paciente";
-            this.tpoEspera.Name = "tpoEspera";
-            this.tpoEspera.Width = 60;
-            // 
-            // relojhs
-            // 
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.relojhs.DefaultCellStyle = dataGridViewCellStyle34;
-            this.relojhs.HeaderText = "Reloj (en hs.)";
-            this.relojhs.Name = "relojhs";
             // 
             // btnIniciar
             // 
@@ -774,6 +656,183 @@
             this.panel1.Size = new System.Drawing.Size(1232, 103);
             this.panel1.TabIndex = 52;
             // 
+            // evento
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evento.DefaultCellStyle = dataGridViewCellStyle1;
+            this.evento.HeaderText = "Evento";
+            this.evento.Name = "evento";
+            this.evento.Width = 285;
+            // 
+            // relojhs
+            // 
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relojhs.DefaultCellStyle = dataGridViewCellStyle2;
+            this.relojhs.HeaderText = "Reloj (en hs.)";
+            this.relojhs.Name = "relojhs";
+            // 
+            // reloj
+            // 
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reloj.DefaultCellStyle = dataGridViewCellStyle3;
+            this.reloj.HeaderText = "Reloj (en min.)";
+            this.reloj.Name = "reloj";
+            this.reloj.Width = 70;
+            // 
+            // rnd1
+            // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.rnd1.HeaderText = "Rnd";
+            this.rnd1.Name = "rnd1";
+            this.rnd1.Width = 50;
+            // 
+            // tpo1
+            // 
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpo1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.tpo1.HeaderText = "t Entre Lleg.";
+            this.tpo1.Name = "tpo1";
+            this.tpo1.Width = 50;
+            // 
+            // prox1
+            // 
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prox1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.prox1.HeaderText = "Prox. Lleg.";
+            this.prox1.Name = "prox1";
+            this.prox1.Width = 70;
+            // 
+            // rnd2
+            // 
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd2.DefaultCellStyle = dataGridViewCellStyle7;
+            this.rnd2.HeaderText = "Rnd";
+            this.rnd2.Name = "rnd2";
+            this.rnd2.Width = 40;
+            // 
+            // tpo2
+            // 
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpo2.DefaultCellStyle = dataGridViewCellStyle8;
+            this.tpo2.HeaderText = "t Entre Lleg.";
+            this.tpo2.Name = "tpo2";
+            this.tpo2.Width = 50;
+            // 
+            // prox2
+            // 
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prox2.DefaultCellStyle = dataGridViewCellStyle9;
+            this.prox2.HeaderText = "Prox. Lleg.";
+            this.prox2.Name = "prox2";
+            this.prox2.Width = 70;
+            // 
+            // est
+            // 
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.est.DefaultCellStyle = dataGridViewCellStyle10;
+            this.est.HeaderText = "Est";
+            this.est.Name = "est";
+            this.est.Width = 30;
+            // 
+            // rnd3
+            // 
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd3.DefaultCellStyle = dataGridViewCellStyle11;
+            this.rnd3.HeaderText = "Rnd";
+            this.rnd3.Name = "rnd3";
+            this.rnd3.Width = 50;
+            // 
+            // tpo3
+            // 
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpo3.DefaultCellStyle = dataGridViewCellStyle12;
+            this.tpo3.HeaderText = "t Atencion";
+            this.tpo3.Name = "tpo3";
+            this.tpo3.Width = 50;
+            // 
+            // finat
+            // 
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finat.DefaultCellStyle = dataGridViewCellStyle13;
+            this.finat.HeaderText = "Fin Atencion";
+            this.finat.Name = "finat";
+            this.finat.Width = 70;
+            // 
+            // haySusp
+            // 
+            this.haySusp.HeaderText = "Hay Suspendidos?";
+            this.haySusp.Name = "haySusp";
+            // 
+            // colac1
+            // 
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colac1.DefaultCellStyle = dataGridViewCellStyle14;
+            this.colac1.HeaderText = "Cola C";
+            this.colac1.Name = "colac1";
+            this.colac1.Width = 40;
+            // 
+            // colau1
+            // 
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colau1.DefaultCellStyle = dataGridViewCellStyle15;
+            this.colau1.HeaderText = "Cola U";
+            this.colau1.Name = "colau1";
+            this.colau1.Width = 40;
+            // 
+            // tpo4
+            // 
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpo4.DefaultCellStyle = dataGridViewCellStyle16;
+            this.tpo4.HeaderText = "Tpo Rest Cons";
+            this.tpo4.Name = "tpo4";
+            this.tpo4.Width = 50;
+            // 
+            // colaMaxCons
+            // 
+            this.colaMaxCons.HeaderText = "Cola Max Consulta";
+            this.colaMaxCons.Name = "colaMaxCons";
+            // 
+            // colaMaxUrg
+            // 
+            this.colaMaxUrg.HeaderText = "Cola Max Urgencias";
+            this.colaMaxUrg.Name = "colaMaxUrg";
+            // 
+            // colaMaxTot
+            // 
+            this.colaMaxTot.HeaderText = "Cola Max Total";
+            this.colaMaxTot.Name = "colaMaxTot";
+            // 
+            // tEspCons
+            // 
+            this.tEspCons.HeaderText = "ultimo t Espera Consulta";
+            this.tEspCons.Name = "tEspCons";
+            // 
+            // tEspPacUrg
+            // 
+            this.tEspPacUrg.HeaderText = "ultimo t Espera Urg";
+            this.tEspPacUrg.Name = "tEspPacUrg";
+            // 
+            // tEspMaxCons
+            // 
+            this.tEspMaxCons.HeaderText = "t Max Espera C";
+            this.tEspMaxCons.Name = "tEspMaxCons";
+            // 
+            // tMaxEspUrg
+            // 
+            this.tMaxEspUrg.HeaderText = "t Max Espera U";
+            this.tMaxEspUrg.Name = "tMaxEspUrg";
+            // 
+            // contAtencUrg
+            // 
+            this.contAtencUrg.HeaderText = "Cont. Urg. Atendidas";
+            this.contAtencUrg.Name = "contAtencUrg";
+            // 
+            // contAtencTot
+            // 
+            this.contAtencTot.HeaderText = "Cont. Atenc. Tot.";
+            this.contAtencTot.Name = "contAtencTot";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -884,7 +943,13 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.MaskedTextBox txtUnifConsB;
         private System.Windows.Forms.MaskedTextBox txtUnifUrgB;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn evento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn relojhs;
         private System.Windows.Forms.DataGridViewTextBoxColumn reloj;
         private System.Windows.Forms.DataGridViewTextBoxColumn rnd1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tpo1;
@@ -896,16 +961,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rnd3;
         private System.Windows.Forms.DataGridViewTextBoxColumn tpo3;
         private System.Windows.Forms.DataGridViewTextBoxColumn finat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn haySusp;
         private System.Windows.Forms.DataGridViewTextBoxColumn colac1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colau1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tpo4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tpoEspera;
-        private System.Windows.Forms.DataGridViewTextBoxColumn relojhs;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colaMaxCons;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colaMaxUrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colaMaxTot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tEspCons;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tEspPacUrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tEspMaxCons;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tMaxEspUrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contAtencUrg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contAtencTot;
     }
 }
 

@@ -24,3 +24,12 @@ D:\Facultad\4 año\SIM\AHORAA FINA\Ejercicio112Final\Ejercicio112\Ejercicio112\o
 D:\Facultad\4 año\SIM\AHORAA FINA\Ejercicio112Final\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.pdb
 D:\Facultad\4 año\SIM\AHORAA FINA\Ejercicio112Final\Ejercicio112\Ejercicio112\bin\Debug\Ejercicio112.exe
 D:\Facultad\4 año\SIM\AHORAA FINA\Ejercicio112Final\Ejercicio112\Ejercicio112\bin\Debug\Ejercicio112.pdb
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\bin\Debug\Ejercicio112.exe
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\bin\Debug\Ejercicio112.pdb
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.csproj.AssemblyReference.cache
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.Form1.resources
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.Properties.Resources.resources
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.csproj.GenerateResource.cache
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.csproj.CoreCompileInputs.cache
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.exe
+C:\Users\Marina Constanza\Documents\GitHub\EspUltFinalSim\Ejercicio112\Ejercicio112\obj\x86\Debug\Ejercicio112.pdb
